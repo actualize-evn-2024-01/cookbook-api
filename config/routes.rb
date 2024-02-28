@@ -7,5 +7,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
-  get "/one_recipe", controller: "recipes", action: "one_recipe_method"
+  get "/recipes" => "recipes#index"
+  get "/recipes/:id" => "recipes#show"
 end

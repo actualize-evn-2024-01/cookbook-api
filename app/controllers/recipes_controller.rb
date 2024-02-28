@@ -1,6 +1,11 @@
 class RecipesController < ApplicationController
-  def one_recipe_method
-    @recipe = Recipe.first
-    render template: "recipes/show"
+  def index
+    @recipes = Recipe.all
+    render :index
+  end
+
+  def show
+    @recipe = Recipe.find_by(id: params[:id])
+    render :show
   end
 end
