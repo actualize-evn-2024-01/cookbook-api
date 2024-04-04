@@ -7,6 +7,7 @@ json.directions recipe.directions
 json.directions_list recipe.directions_list
 json.image_url recipe.image_url
 json.prep_time recipe.prep_time
+json.favorite recipe.favorite
 json.friendly_prep_time recipe.friendly_prep_time
 json.created_at recipe.created_at
 json.friendly_created_at recipe.friendly_created_at
